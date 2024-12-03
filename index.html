@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HMS - Book Hotels Anywhere</title>
+  <link rel="stylesheet" href="styles.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <!-- Logo -->
+      <div class="navbar-logo">
+        <span>HMS</span>
+      </div>
+  
+      <!-- Links -->
+      <ul class="navbar-links">
+        <li><a href="#">Shop Travel</a></li>
+        <li><a href="#">List Your Property</a></li>
+        <li><a href="#">Support</a></li>
+        <li><a href="#">Trips</a></li>
+        <li class="nav-link-btn"><button href="#" class="btn-search">Signin/Login</button></li>
+      </ul>
+    </div>
+  </nav>
+  
+  <!-- Hero Section -->
+  <section class="hero" id="search">
+    <div class="hero-content">
+      <h1>Where To?</h1>
+      <form class="search-bar">
+        <div class="search-field">
+          <input type="text" placeholder="Search by city, hotel, or neighborhood" required>
+          <button type="button" class="near-me-btn">📍 Near Me</button>
+        </div>
+        <div class="date-room-field">
+          <input type="text" placeholder="3rd December 2024" readonly>
+          <input type="text" placeholder="1 Guest" readonly>
+        </div>
+        <button type="submit" class="btn-search">Search</button>
+      </form>
+    </div>
+  </section>
+  
+  <!-- Features Section -->
+  <section class="highlight-section">
+    <div class="highlight-container">
+      <div class="highlight-text">
+        <h2>Find and book your perfect stay</h2>
+      </div>
+      <div class="highlight-cards">
+        <div class="highlight-card">
+          
+          <p>Earn rewards on every night you stay</p>
+        </div>
+        <div class="highlight-card">
+        
+          <p>Save more with affordable Prices</p>
+        </div>
+        <div class="highlight-card">
+        
+          <p>Free cancellation options if plans change</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Reviews Section -->
+  <section class="trending-destinations">
+    <h2>Explore stays in trending destinations</h2>
+    <div class="destinations">
+      <div class="destination-card">
+        <img src="./assets/mountain.jpg" alt="Sawai Madhopur">
+        <div class="destination-info">
+          <h3>Sawai Madhopur</h3>
+          <p>India</p>
+        </div>
+      </div>
+      <div class="destination-card">
+        <img src="./assets/mountain.jpg" alt="Mumbai">
+        <div class="destination-info">
+          <h3>Mumbai</h3>
+          <p>India</p>
+        </div>
+      </div>
+      <div class="destination-card">
+        <img src="./assets/mountain.jpg" alt="Greater Noida">
+        <div class="destination-info">
+          <h3>Greater Noida</h3>
+          <p>India</p>
+        </div>
+      </div>
+      <div class="destination-card">
+        <img src="./assets/mountain.jpg" alt="Las Vegas">
+        <div class="destination-info">
+          <h3>Las Vegas</h3>
+          <p>United States of America</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-links">
+      <h3>HMS Hotels</h3>
+      <div class="footer-columns">
+        <ul>
+          <li><a href="#">Hotels near me</a></li>
+          <li><a href="#">Hotels in Manali</a></li>
+          <li><a href="#">Hotels in Nainital</a></li>
+          <li><a href="#">Hotels in Mount Abu</a></li>
+          <li><a href="#">Hotels in Agra</a></li>
+          <li><a href="#">Hotels in Haridwar</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Hotels in Goa</a></li>
+          <li><a href="#">Hotels in Udaipur</a></li>
+          <li><a href="#">Hotels in Lonavala</a></li>
+          <li><a href="#">Hotels in Kodaikanal</a></li>
+          <li><a href="#">Hotels in Gangtok</a></li>
+          <li><a href="#">Hotels in Kolkata</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Hotels in Puri</a></li>
+          <li><a href="#">Hotels in Mussoorie</a></li>
+          <li><a href="#">Hotels in Munnar</a></li>
+          <li><a href="#">Hotels in Hyderabad</a></li>
+          <li><a href="#">Hotels in Coorg</a></li>
+          <li><a href="#">Hotels in Ahmedabad</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Hotels in Mahabaleshwar</a></li>
+          <li><a href="#">Hotels in Pondicherry</a></li>
+          <li><a href="#">Hotels in Bangalore</a></li>
+          <li><a href="#">Hotels in Pune</a></li>
+          <li><a href="#">Hotels in Chennai</a></li>
+          <li><a href="#">Hotels in Shillong</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <div class="footer-columns footer-social">
+      <a href="#" class="social-icon"><i class="fa fa-facebook"></i></a>
+      <a href="#" class="social-icon"><i class="fa fa-instagram"></i></a>
+      <a href="#" class="social-icon"><i class="fa fa-twitter"></i></a>
+      <a href="#" class="social-icon"><i class="fa fa-play"></i></a>
+      <a href="#" class="social-icon"><i class="fa fa-pinterest"></i></a>
+      <button type="submit" class="btn-search">List Your Property</button>
+    </div>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>

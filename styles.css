@@ -1,0 +1,396 @@
+/* General Styles */
+*{
+  font-family: "Poppins", sans-serif;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333333;
+    background-color: #ffffff;
+  }
+  
+ 
+  
+  p {
+    margin: 0;
+    color: #FADA7A;
+  }
+ 
+  /* Navbar */
+  /* Navbar Styling */
+.navbar {
+    background-color: #B1F0F7;
+    padding: 1rem 8rem;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Logo */
+  .navbar-logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-logo .logo-image {
+    width: 40px;
+    height: 40px;
+    margin-right: 0.5rem;
+  }
+  
+  .navbar-logo span {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000;
+  }
+  
+  /* Links */
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-links li {
+    display: inline-block;
+  }
+  
+  .navbar-links a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-links a:hover {
+    color: #b00020;
+  }
+
+  
+  /* Signin/Login Button */
+  .nav-link-btn {
+    margin-top: -1rem;
+  }
+  
+  /* Hero Section */
+  /* Hero Section */
+.hero {
+    background: linear-gradient(to bottom, rgba(57, 30, 30, 0.6), rgba(0, 0, 0, 0.8)), url('./assets/lake.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .hero h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    opacity: 0; /* Hidden by default for animation */
+    transform: translateY(20px);
+    animation: fadeIn 1.5s ease-out forwards; /* Trigger fade-in */
+  }
+  
+  .search-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    opacity: 0; /* Hidden by default for animation */
+    transform: translateY(20px);
+    animation: slideUp 1.5s ease-out forwards 0.5s; /* Delayed animation */
+  }
+  
+  .search-field {
+    display: flex;
+    background: white;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .search-field input {
+    padding: 0.8rem;
+    border: none;
+    outline: none;
+    flex-grow: 1;
+  }
+  
+  .near-me-btn {
+    padding: 0.8rem 1rem;
+    border: none;
+    background: #e0e0e0;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .near-me-btn:hover {
+    background: #d6d6d6;
+    transform: scale(1.1);
+  }
+  
+  .date-room-field {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .date-room-field input {
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    background: white;
+    text-align: center;
+    min-width: 150px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .btn-search {
+    background: #28a745;
+    color: white;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .btn-search:hover {
+    background: #218838;
+    color: white;
+    transform: scale(1.1);
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  
+  /* Feature Cards */
+  .highlight-section {
+    background-color: #81BFDA;
+    padding: 2rem;
+    border-radius: 10px;
+    margin: 7rem;
+    align-items: center;
+  }
+  
+  .highlight-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+  }
+  
+  .highlight-text h2 {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    flex: 1 100%;
+    margin-bottom: 1rem;
+  }
+  
+  .highlight-cards {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .highlight-card {
+    background-color: #218838;
+    color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1 0 30%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .highlight-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .highlight-card i {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+  
+  .highlight-card p {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: white;
+  }
+  
+ 
+  
+  /* Reviews Section */
+
+
+.trending-destinations {
+    text-align: center;
+    padding: 100px;
+    background: url(./assets/beach.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.trending-destinations h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: black;
+    text-shadow: 1px 1px 20px #ffffff;
+}
+
+.destinations {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.destination-card {
+    background-color: #B1F0F7;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 250px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.destination-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.destination-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.destination-info {
+    padding: 10px;
+}
+
+.destination-info h3 {
+    font-size: 18px;
+    margin: 0;
+    color: #333;
+}
+
+.destination-info p {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0 0;
+}
+
+  
+  /* Footer */
+  .footer {
+    background-color: #242424;
+    color: white;
+    padding: 20px 40px;
+    text-align: center;
+}
+
+.footer h3 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    flex-wrap: wrap;
+}
+
+.footer-columns ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-columns ul li {
+    margin: 8px 0;
+    text-align: left;
+
+}
+
+.footer-columns ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.2s;
+    text-align: left;
+}
+
+.footer-columns ul li a:hover {
+    color: #FADA7A;
+}
+
+.footer-social {
+    margin-top: 40px;
+}
+
+.social-icon {
+    display: inline-block;
+    margin: 0 10px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.social-icon:hover {
+    background-color: white;
+    color: #6c757d;
+}
